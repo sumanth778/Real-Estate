@@ -11,7 +11,7 @@ model = joblib.load('Random_forest_price_model.pkl')
 
 
 location_le = LabelEncoder()
-location_le.classes_ = np.array(['Mahattan', 'Brooklyn', 'Bronx', 'Queens', 'Staten Island', 'Harlem'])
+location_le.classes_ = np.array(['Manhattan', 'Brooklyn', 'Bronx', 'Queens', 'Staten Island', 'Harlem'])
 
 property_type_le = LabelEncoder()
 property_type_le.classes_ = np.array(['Apartment', 'Condo', 'House'])
